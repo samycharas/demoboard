@@ -13175,8 +13175,6 @@ ERM1602-6_SERIES</text>
 <part name="J4" library="microUSBAB" deviceset="10104111-0001LF" device=""/>
 <part name="U2" library="STM32F207ZGT6" deviceset="STM32F207ZGT6" device=""/>
 <part name="R_OSC7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="330"/>
-<part name="R_OSC8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="220"/>
-<part name="R_OSC9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="220"/>
 <part name="R_OSC10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="330"/>
 <part name="U1" library="SN74LVC2T45YZPR" deviceset="SN74LVC2T45YZPR" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -13437,14 +13435,6 @@ There are two power rings, one for the core voltage (0.8V) and one for IO (1.8V)
 <instance part="R_OSC7" gate="G$1" x="363.22" y="-375.92" smashed="yes" rot="R180">
 <attribute name="NAME" x="367.03" y="-377.4186" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="367.03" y="-372.618" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="R_OSC8" gate="G$1" x="541.02" y="-619.76" smashed="yes" rot="R180">
-<attribute name="NAME" x="544.83" y="-621.2586" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="544.83" y="-616.458" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="R_OSC9" gate="G$1" x="535.94" y="-619.76" smashed="yes" rot="R180">
-<attribute name="NAME" x="539.75" y="-621.2586" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="539.75" y="-616.458" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R_OSC10" gate="G$1" x="363.22" y="-391.16" smashed="yes" rot="R180">
 <attribute name="NAME" x="367.03" y="-392.6586" size="1.778" layer="95" rot="R180"/>
@@ -14254,12 +14244,6 @@ There are two power rings, one for the core voltage (0.8V) and one for IO (1.8V)
 <wire x1="190.5" y1="66.04" x2="198.12" y2="66.04" width="0.1524" layer="91"/>
 <junction x="190.5" y="66.04"/>
 <label x="198.12" y="66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
-<label x="548.64" y="-619.76" size="1.778" layer="95"/>
-</segment>
-<segment>
-<label x="543.56" y="-619.76" size="1.778" layer="95"/>
 </segment>
 <segment>
 <label x="152.4" y="-10.16" size="1.778" layer="95" rot="R90"/>
@@ -15263,30 +15247,6 @@ There are two power rings, one for the core voltage (0.8V) and one for IO (1.8V)
 <segment>
 <pinref part="R_OSC7" gate="G$1" pin="1"/>
 <wire x1="368.3" y1="-375.92" x2="370.84" y2="-375.92" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VCC1" class="0">
-<segment>
-<wire x1="533.4" y1="-619.76" x2="535.94" y2="-619.76" width="0.1524" layer="91"/>
-<pinref part="R_OSC8" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="R_OSC8" gate="G$1" pin="1"/>
-<wire x1="546.1" y1="-619.76" x2="548.64" y2="-619.76" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VCC2" class="0">
-<segment>
-<wire x1="528.32" y1="-619.76" x2="530.86" y2="-619.76" width="0.1524" layer="91"/>
-<pinref part="R_OSC9" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$27" class="0">
-<segment>
-<pinref part="R_OSC9" gate="G$1" pin="1"/>
-<wire x1="541.02" y1="-619.76" x2="543.56" y2="-619.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">

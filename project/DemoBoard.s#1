@@ -13033,6 +13033,71 @@ ERM1602-6_SERIES</text>
 </deviceset>
 </devicesets>
 </library>
+<library name="PTV09A-4225F-B104">
+<packages>
+<package name="PTV09">
+<wire x1="-5" y1="1" x2="5" y2="1" width="0.127" layer="21"/>
+<wire x1="5" y1="1" x2="5" y2="13" width="0.127" layer="21"/>
+<wire x1="5" y1="13" x2="-5" y2="13" width="0.127" layer="21"/>
+<wire x1="-5" y1="13" x2="-5" y2="1" width="0.127" layer="21"/>
+<text x="-3" y="14" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="10" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="1" x="-2.5" y="0" drill="1"/>
+<pad name="2" x="0" y="0" drill="1"/>
+<pad name="3" x="2.5" y="0" drill="1"/>
+<pad name="NC1" x="-4.4" y="7" drill="2.2"/>
+<pad name="NC2" x="4.4" y="7" drill="2.2"/>
+</package>
+</packages>
+<symbols>
+<symbol name="POT">
+<wire x1="-2.54" y1="0" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="0" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="0" y1="-6.35" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="0" y2="6.35" width="0.254" layer="94"/>
+<wire x1="0" y1="6.35" x2="0" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="1.27" x2="-3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-5.08" y2="-1.27" width="0.254" layer="94"/>
+<text x="5.08" y="0" size="1.27" layer="94">&gt;NAME</text>
+<pin name="2" x="-7.62" y="0" visible="off" length="short"/>
+<pin name="1" x="0" y="10.16" visible="off" length="short" rot="R270"/>
+<pin name="3" x="0" y="-10.16" visible="off" length="short" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PTV09A-4225F-B104" prefix="VR">
+<description>100k Ohm 1 Gang Linear Through Hole, Snap In Potentiometer Detent 1 Turn Carbon 0.05W, 1/20W PC Pins, Board Locks (NOT RA) &lt;a href="https://snapeda.com/parts/PTV09A-4225F-B104/Bourns/view-part/?ref=eda"&gt;Buy Part&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="POT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PTV09">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ARROW_ELECTRONICS-PURCHASE-URL" value="https://snapeda.com/shop?store=Arrow+Electronics&amp;id=1448300"/>
+<attribute name="AVAILABILITY" value="Warning"/>
+<attribute name="DESCRIPTION" value=" 100k Ohm 1 Gang Linear Through Hole, Snap In Potentiometer Detent 1 Kierros Carbon 0.05W, 1/20W PC Pins, Board Locks "/>
+<attribute name="DIGIKEY-PURCHASE-URL" value="https://snapeda.com/shop?store=DigiKey&amp;id=1448300"/>
+<attribute name="MF" value="Bourns"/>
+<attribute name="MOUSER-PURCHASE-URL" value="https://snapeda.com/shop?store=Mouser&amp;id=1448300"/>
+<attribute name="MP" value="PTV09A-4225F-B104"/>
+<attribute name="PACKAGE" value="None"/>
+<attribute name="PRICE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13100,19 +13165,19 @@ ERM1602-6_SERIES</text>
 <part name="C_VCC4" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:6240337/1" value="1uF"/>
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D1" library="IN-P55TATRGB" deviceset="IN-P55TATRGB" device=""/>
-<part name="R_OSC4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="280"/>
+<part name="R_OSC4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="270"/>
 <part name="R_OSC5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="220"/>
-<part name="R_OSC6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="280"/>
+<part name="R_OSC6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="270"/>
 <part name="J1" library="connector5pin" deviceset="SAMTEC-MMS-105-02-X-SV" device="J"/>
 <part name="DIS1" library="HD44780" deviceset="HD44780" device="_16026_16X2_BYG_5V"/>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J4" library="microUSBAB" deviceset="10104111-0001LF" device=""/>
 <part name="U2" library="STM32F207ZGT6" deviceset="STM32F207ZGT6" device=""/>
-<part name="R_OSC7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="220"/>
+<part name="R_OSC7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="330"/>
 <part name="R_OSC8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="220"/>
 <part name="R_OSC9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="220"/>
-<part name="R_OSC10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="220"/>
+<part name="R_OSC10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="330"/>
 <part name="U1" library="SN74LVC2T45YZPR" deviceset="SN74LVC2T45YZPR" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -13122,6 +13187,8 @@ ERM1602-6_SERIES</text>
 <part name="U4" library="SN74LVC2T45YZPR" deviceset="SN74LVC2T45YZPR" device=""/>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="VR1" library="PTV09A-4225F-B104" deviceset="PTV09A-4225F-B104" device=""/>
+<part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13412,6 +13479,12 @@ There are two power rings, one for the core voltage (0.8V) and one for IO (1.8V)
 </instance>
 <instance part="GND27" gate="1" x="210.82" y="-17.78" smashed="yes" rot="R270">
 <attribute name="VALUE" x="208.28" y="-15.24" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="VR1" gate="G$1" x="73.66" y="-30.48" smashed="yes">
+<attribute name="NAME" x="78.74" y="-30.48" size="1.27" layer="94"/>
+</instance>
+<instance part="GND28" gate="1" x="73.66" y="-43.18" smashed="yes">
+<attribute name="VALUE" x="71.12" y="-45.72" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -14114,6 +14187,10 @@ There are two power rings, one for the core voltage (0.8V) and one for IO (1.8V)
 <pinref part="U4" gate="A" pin="DIR"/>
 <pinref part="GND27" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="VR1" gate="G$1" pin="3"/>
+<pinref part="GND28" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="5V_EXT" class="0">
 <segment>
@@ -14126,6 +14203,7 @@ There are two power rings, one for the core voltage (0.8V) and one for IO (1.8V)
 <label x="63.5" y="-10.16" size="1.778" layer="95"/>
 <label x="93.98" y="-10.16" size="1.778" layer="95" rot="R90"/>
 <label x="30.48" y="-10.16" size="1.778" layer="95" rot="R270"/>
+<label x="73.66" y="-20.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="PVIN@1"/>
@@ -14643,6 +14721,37 @@ There are two power rings, one for the core voltage (0.8V) and one for IO (1.8V)
 <segment>
 <label x="213.36" y="-12.7" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="Y1" gate="G$1" pin="VDD"/>
+<wire x1="350.52" y1="157.48" x2="350.52" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="167.64" x2="314.96" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="167.64" x2="314.96" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="R_OSC1" gate="G$1" pin="2"/>
+<wire x1="350.52" y1="157.48" x2="355.6" y2="157.48" width="0.1524" layer="91"/>
+<label x="358.14" y="157.48" size="1.778" layer="95"/>
+<pinref part="C_VCC2" gate="G$1" pin="1"/>
+<wire x1="355.6" y1="157.48" x2="358.14" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="160.02" x2="355.6" y2="157.48" width="0.1524" layer="91"/>
+<junction x="355.6" y="157.48"/>
+</segment>
+<segment>
+<pinref part="Y2" gate="G$1" pin="VDD"/>
+<wire x1="350.52" y1="119.38" x2="350.52" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="129.54" x2="314.96" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="129.54" x2="314.96" y2="127" width="0.1524" layer="91"/>
+<pinref part="R_OSC2" gate="G$1" pin="2"/>
+<wire x1="350.52" y1="119.38" x2="358.14" y2="119.38" width="0.1524" layer="91"/>
+<label x="358.14" y="119.38" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="Y3" gate="G$1" pin="VDD"/>
+<wire x1="350.52" y1="81.28" x2="350.52" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="91.44" x2="314.96" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="91.44" x2="314.96" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="R_OSC3" gate="G$1" pin="2"/>
+<wire x1="350.52" y1="81.28" x2="358.14" y2="81.28" width="0.1524" layer="91"/>
+<label x="358.14" y="81.28" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -14911,6 +15020,11 @@ There are two power rings, one for the core voltage (0.8V) and one for IO (1.8V)
 <wire x1="43.18" y1="-58.42" x2="43.18" y2="-73.66" width="0.1524" layer="91"/>
 <label x="43.18" y="-58.42" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="U1" gate="A" pin="B1"/>
+<wire x1="129.54" y1="-17.78" x2="132.08" y2="-17.78" width="0.1524" layer="91"/>
+<label x="132.08" y="-17.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PROGCLK" class="0">
 <segment>
@@ -15025,21 +15139,6 @@ There are two power rings, one for the core voltage (0.8V) and one for IO (1.8V)
 <label x="-45.72" y="-223.52" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="Y1" gate="G$1" pin="VDD"/>
-<wire x1="350.52" y1="157.48" x2="350.52" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="350.52" y1="167.64" x2="314.96" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="314.96" y1="167.64" x2="314.96" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="R_OSC1" gate="G$1" pin="2"/>
-<wire x1="350.52" y1="157.48" x2="355.6" y2="157.48" width="0.1524" layer="91"/>
-<label x="358.14" y="157.48" size="1.778" layer="95"/>
-<pinref part="C_VCC2" gate="G$1" pin="1"/>
-<wire x1="355.6" y1="157.48" x2="358.14" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="160.02" x2="355.6" y2="157.48" width="0.1524" layer="91"/>
-<junction x="355.6" y="157.48"/>
-</segment>
-</net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="Y1" gate="G$1" pin="OE/!ST/!NC"/>
@@ -15052,17 +15151,6 @@ There are two power rings, one for the core voltage (0.8V) and one for IO (1.8V)
 <pinref part="Y2" gate="G$1" pin="OUT"/>
 <pinref part="S1" gate="G$1" pin="3"/>
 <wire x1="350.52" y1="114.3" x2="391.16" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="Y2" gate="G$1" pin="VDD"/>
-<wire x1="350.52" y1="119.38" x2="350.52" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="350.52" y1="129.54" x2="314.96" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="314.96" y1="129.54" x2="314.96" y2="127" width="0.1524" layer="91"/>
-<pinref part="R_OSC2" gate="G$1" pin="2"/>
-<wire x1="350.52" y1="119.38" x2="358.14" y2="119.38" width="0.1524" layer="91"/>
-<label x="358.14" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -15078,17 +15166,6 @@ There are two power rings, one for the core voltage (0.8V) and one for IO (1.8V)
 <pinref part="S1" gate="G$1" pin="4"/>
 <wire x1="350.52" y1="76.2" x2="391.16" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="391.16" y1="76.2" x2="391.16" y2="111.76" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="Y3" gate="G$1" pin="VDD"/>
-<wire x1="350.52" y1="81.28" x2="350.52" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="350.52" y1="91.44" x2="314.96" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="314.96" y1="91.44" x2="314.96" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="R_OSC3" gate="G$1" pin="2"/>
-<wire x1="350.52" y1="81.28" x2="358.14" y2="81.28" width="0.1524" layer="91"/>
-<label x="358.14" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -15232,9 +15309,9 @@ There are two power rings, one for the core voltage (0.8V) and one for IO (1.8V)
 <label x="53.34" y="-10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U4" gate="A" pin="A1"/>
-<wire x1="248.92" y1="-10.16" x2="251.46" y2="-10.16" width="0.1524" layer="91"/>
-<label x="251.46" y="-10.16" size="1.778" layer="95"/>
+<pinref part="U4" gate="A" pin="A2"/>
+<wire x1="248.92" y1="-12.7" x2="251.46" y2="-12.7" width="0.1524" layer="91"/>
+<label x="251.46" y="-12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DB6" class="0">
@@ -15243,6 +15320,12 @@ There are two power rings, one for the core voltage (0.8V) and one for IO (1.8V)
 <wire x1="50.8" y1="-7.62" x2="50.8" y2="-10.16" width="0.1524" layer="91"/>
 <label x="50.8" y="-10.16" size="1.778" layer="95" rot="R270"/>
 </segment>
+<segment>
+<pinref part="U4" gate="A" pin="A1"/>
+<wire x1="248.92" y1="-10.16" x2="251.46" y2="-10.16" width="0.1524" layer="91"/>
+<label x="251.46" y="-10.16" size="1.778" layer="95"/>
+<wire x1="248.92" y1="-10.16" x2="251.46" y2="-10.16" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="DB5" class="0">
 <segment>
@@ -15250,12 +15333,22 @@ There are two power rings, one for the core voltage (0.8V) and one for IO (1.8V)
 <wire x1="48.26" y1="-7.62" x2="48.26" y2="-10.16" width="0.1524" layer="91"/>
 <label x="48.26" y="-10.16" size="1.778" layer="95" rot="R270"/>
 </segment>
+<segment>
+<pinref part="U3" gate="A" pin="A2"/>
+<wire x1="187.96" y1="-12.7" x2="190.5" y2="-12.7" width="0.1524" layer="91"/>
+<label x="190.5" y="-12.7" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DB4" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="DB4"/>
 <wire x1="45.72" y1="-7.62" x2="45.72" y2="-10.16" width="0.1524" layer="91"/>
 <label x="45.72" y="-10.16" size="1.778" layer="95" rot="R270"/>
+</segment>
+<segment>
+<pinref part="U3" gate="A" pin="A1"/>
+<wire x1="187.96" y1="-10.16" x2="190.5" y2="-10.16" width="0.1524" layer="91"/>
+<label x="190.5" y="-10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="E" class="0">
@@ -15270,29 +15363,10 @@ There are two power rings, one for the core voltage (0.8V) and one for IO (1.8V)
 <wire x1="25.4" y1="-7.62" x2="25.4" y2="-10.16" width="0.1524" layer="91"/>
 <label x="25.4" y="-10.16" size="1.778" layer="95" rot="R270"/>
 </segment>
-</net>
-<net name="N$41" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="A1"/>
 <wire x1="129.54" y1="-10.16" x2="132.08" y2="-10.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$42" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="A2"/>
-<wire x1="129.54" y1="-12.7" x2="132.08" y2="-12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$43" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="B1"/>
-<wire x1="129.54" y1="-17.78" x2="132.08" y2="-17.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$44" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="B2"/>
-<wire x1="129.54" y1="-20.32" x2="132.08" y2="-20.32" width="0.1524" layer="91"/>
+<label x="132.08" y="-10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO17" class="0">
@@ -15301,12 +15375,22 @@ There are two power rings, one for the core voltage (0.8V) and one for IO (1.8V)
 <wire x1="-7.62" y1="-73.66" x2="-7.62" y2="-58.42" width="0.1524" layer="91"/>
 <label x="-7.62" y="-58.42" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="U1" gate="A" pin="B2"/>
+<wire x1="129.54" y1="-20.32" x2="132.08" y2="-20.32" width="0.1524" layer="91"/>
+<label x="132.08" y="-20.32" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GPIO16" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="GPIO16"/>
 <wire x1="50.8" y1="-73.66" x2="50.8" y2="-58.42" width="0.1524" layer="91"/>
 <label x="50.8" y="-58.42" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="U4" gate="A" pin="B1"/>
+<wire x1="248.92" y1="-17.78" x2="251.46" y2="-17.78" width="0.1524" layer="91"/>
+<label x="251.46" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO15" class="0">
@@ -15315,12 +15399,22 @@ There are two power rings, one for the core voltage (0.8V) and one for IO (1.8V)
 <wire x1="48.26" y1="-73.66" x2="48.26" y2="-58.42" width="0.1524" layer="91"/>
 <label x="48.26" y="-58.42" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="U3" gate="A" pin="B2"/>
+<wire x1="187.96" y1="-20.32" x2="190.5" y2="-20.32" width="0.1524" layer="91"/>
+<label x="190.5" y="-20.32" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GPIO14" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="GPIO14"/>
 <wire x1="45.72" y1="-73.66" x2="45.72" y2="-58.42" width="0.1524" layer="91"/>
 <label x="45.72" y="-58.42" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="U3" gate="A" pin="B1"/>
+<wire x1="187.96" y1="-17.78" x2="190.5" y2="-17.78" width="0.1524" layer="91"/>
+<label x="190.5" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO12" class="0">
@@ -15330,45 +15424,9 @@ There are two power rings, one for the core voltage (0.8V) and one for IO (1.8V)
 <label x="101.6" y="-58.42" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U4" gate="A" pin="B1"/>
-<wire x1="248.92" y1="-17.78" x2="251.46" y2="-17.78" width="0.1524" layer="91"/>
-<label x="251.46" y="-17.78" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$33" class="0">
-<segment>
-<pinref part="U3" gate="A" pin="A1"/>
-<wire x1="187.96" y1="-10.16" x2="190.5" y2="-10.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$45" class="0">
-<segment>
-<pinref part="U3" gate="A" pin="A2"/>
-<wire x1="187.96" y1="-12.7" x2="190.5" y2="-12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$46" class="0">
-<segment>
-<pinref part="U3" gate="A" pin="B1"/>
-<wire x1="187.96" y1="-17.78" x2="190.5" y2="-17.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$47" class="0">
-<segment>
-<pinref part="U3" gate="A" pin="B2"/>
-<wire x1="187.96" y1="-20.32" x2="190.5" y2="-20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$49" class="0">
-<segment>
-<pinref part="U4" gate="A" pin="A2"/>
-<wire x1="248.92" y1="-12.7" x2="251.46" y2="-12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$51" class="0">
-<segment>
 <pinref part="U4" gate="A" pin="B2"/>
 <wire x1="248.92" y1="-20.32" x2="251.46" y2="-20.32" width="0.1524" layer="91"/>
+<label x="251.46" y="-20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RW" class="0">
@@ -15376,6 +15434,19 @@ There are two power rings, one for the core voltage (0.8V) and one for IO (1.8V)
 <pinref part="DIS1" gate="G$1" pin="R/W"/>
 <wire x1="27.94" y1="-7.62" x2="27.94" y2="-10.16" width="0.1524" layer="91"/>
 <label x="27.94" y="-10.16" size="1.778" layer="95" rot="R270"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="A2"/>
+<wire x1="129.54" y1="-12.7" x2="132.08" y2="-12.7" width="0.1524" layer="91"/>
+<label x="132.08" y="-12.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="DIS1" gate="G$1" pin="CONTRAST"/>
+<pinref part="VR1" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="-7.62" x2="58.42" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="-30.48" x2="66.04" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

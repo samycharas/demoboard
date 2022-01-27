@@ -7383,6 +7383,7 @@ month.</text>
 <wire x1="30.48" y1="3.81" x2="30.48" y2="7.62" width="0.1524" layer="91"/>
 <label x="30.48" y="0" size="1.778" layer="95" rot="R90"/>
 <pinref part="RESET" gate="G$1" pin="3"/>
+<wire x1="30.48" y1="7.62" x2="30.48" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="Q3" gate="G$1" pin="C"/>
@@ -8250,6 +8251,7 @@ month.</text>
 <pinref part="U$31" gate="G$1" pin="GND"/>
 </segment>
 <segment>
+<wire x1="63.5" y1="48.26" x2="63.5" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U$32" gate="G$1" pin="GND"/>
 <pinref part="IC2" gate="G$1" pin="EP"/>
 <wire x1="63.5" y1="45.72" x2="63.5" y2="40.64" width="0.1524" layer="91"/>
@@ -9398,11 +9400,9 @@ month.</text>
 <approved hash="104,1,213.36,142.24,J5,VSS,GND,,,"/>
 <approved hash="104,1,203.2,132.08,D5,VBUS,GND,,,"/>
 <approved hash="104,1,167.64,132.08,D5,GND,3.3V,,,"/>
-<approved hash="111,2,66.04,125.095,5.0V,,,,,"/>
-<approved hash="111,2,63.5,46.355,5.0V,,,,,"/>
-<approved hash="113,1,195.275,19.7815,FRAME1,,,,,"/>
-<approved hash="113,2,195.275,19.7815,FRAME2,,,,,"/>
-<approved hash="113,3,195.529,19.5275,FRAME3,,,,,"/>
+<approved hash="113,1,195.275,19.7358,FRAME1,,,,,"/>
+<approved hash="113,2,195.275,19.7358,FRAME2,,,,,"/>
+<approved hash="113,3,195.529,19.4818,FRAME3,,,,,"/>
 <approved hash="113,3,35.1155,151.79,J3,,,,,"/>
 <approved hash="113,3,35.1155,131.47,J2,,,,,"/>
 <approved hash="113,3,91.8845,133.055,J4,,,,,"/>
